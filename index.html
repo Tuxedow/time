@@ -1,133 +1,134 @@
+好的，以下是修改后的HTML代码，标题和内容已按照要求调整：
+
 ```html
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>水土保持时间线</title>
+    <title>地拓“十四五”重点项目一览</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f7fa;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 20px;
-        }
-        .timeline {
-            max-width: 100%;
-            margin: 0 auto;
-            position: relative;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            bottom: 20px;
-            left: 20px;
-            width: 2px;
-            background-color: #4a90e2;
-        }
-        .event {
-            margin-bottom: 40px;
-            position: relative;
-            padding-left: 40px;
-        }
-        .event:last-child {
-            margin-bottom: 0;
-        }
-        .event-content {
-            background-color: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            position: relative;
-            z-index: 1;
-        }
-        .event-date {
-            font-weight: bold;
-            color: #4a90e2;
-            margin-bottom: 8px;
-            font-size: 14px;
-        }
-        .event-title {
+            background-color: #f4f9fd;
             color: #333;
-            margin: 0 0 8px 0;
-            font-size: 16px;
         }
-        .event-description {
-            color: #666;
-            margin: 0;
-            font-size: 14px;
-            line-height: 1.4;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .event-marker {
-            width: 16px;
-            height: 16px;
-            background-color: #4a90e2;
-            border-radius: 50%;
-            position: absolute;
-            left: 15px;
-            top: 20px;
-            z-index: 2;
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
-        @media (max-width: 768px) {
-            .timeline::before {
-                left: 15px;
-            }
-            .event {
-                padding-left: 35px;
-            }
-            .event-marker {
-                left: 10px;
-            }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #e7f3ff;
+            color: #333;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        .category {
+            font-size: 18px;
+            color: #4a90e2;
         }
     </style>
 </head>
 <body>
-    <div class="timeline">
-        <div class="event">
-            <div class="event-marker"></div>
-            <div class="event-content">
-                <div class="event-date">2021年12月</div>
-                <h3 class="event-title">《水土保持“十四五”实施方案》印发</h3>
-                <p class="event-description">地拓启动智慧水土保持分系统1.0建设并开展数字化场景建设项目</p>
-            </div>
-        </div>
+    <div class="container">
+        <h1>地拓“十四五”重点项目一览</h1>
         
-        <div class="event">
-            <div class="event-marker"></div>
-            <div class="event-content">
-                <div class="event-date">2022年12月</div>
-                <h3 class="event-title">《关于加强新时代水土保持工作的意见》印发</h3>
-                <p class="event-description">地拓全面升级全国水土保持信息化管理系统</p>
-            </div>
-        </div>
+        <h2 class="category">一、政务信息管理类</h2>
+        <table>
+            <tr>
+                <th>主要事件</th>
+                <th>重点项目</th>
+            </tr>
+            <tr>
+                <td>全国水土保持信息管理支撑</td>
+                <td>2021-2024年度数据更新与系统维护</td>
+            </tr>
+            <tr>
+                <td>全国水土保持规划评估考核管理支撑</td>
+                <td>规划评估遥感复核与数据管理</td>
+            </tr>
+            <tr>
+                <td>流域规划信息平台支撑</td>
+                <td>流域规划数据共享平台建设</td>
+            </tr>
+            <tr>
+                <td>省级水土保持信息化案例</td>
+                <td>安徽省智慧水土保持平台</td>
+            </tr>
+        </table>
         
-        <div class="event">
-            <div class="event-marker"></div>
-            <div class="event-content">
-                <div class="event-date">2023年7月</div>
-                <h3 class="event-title">国家水土保持监测站点优化布局工程启动</h3>
-                <p class="event-description">地拓参与智能管理分析平台开发与数据资源建设</p>
-            </div>
-        </div>
+        <h2 class="category">二、监测站点优化与智能分析类</h2>
+        <table>
+            <tr>
+                <th>主要事件</th>
+                <th>重点项目</th>
+            </tr>
+            <tr>
+                <td>国家水土保持监测站点优化布局工程</td>
+                <td>智能管理平台开发与数据建设</td>
+            </tr>
+            <tr>
+                <td>智慧水利水土保持分系统</td>
+                <td>水土流失动态监测数字化场景</td>
+            </tr>
+        </table>
         
-        <div class="event">
-            <div class="event-marker"></div>
-            <div class="event-content">
-                <div class="event-date">2023年12月</div>
-                <h3 class="event-title">《水利部关于实施水土保持信用评价的意见》印发</h3>
-                <p class="event-description">地拓开发水土保持信用评级平台并打通相关系统实现互联互通</p>
-            </div>
-        </div>
+        <h2 class="category">三、遥感技术应用与监管服务类</h2>
+        <table>
+            <tr>
+                <th>主要事件</th>
+                <th>重点项目</th>
+            </tr>
+            <tr>
+                <td>高分水利遥感专项子模块开发</td>
+                <td>水土保持监测与评价模块开发</td>
+            </tr>
+            <tr>
+                <td>水利部生产建设项目水土保持监管遥感解译与判别项目</td>
+                <td>遥感协同解译与区域监管平台</td>
+            </tr>
+        </table>
         
-        <div class="event">
-            <div class="event-marker"></div>
-            <div class="event-content">
-                <div class="event-date">2024年1月</div>
-                <h3 class="event-title">《关于加强水土保持空间管控的意见》印发</h3>
-                <p class="event-description">地拓提供水土保持空间管控的技术支持和解决方案</p>
-            </div>
-        </div>
+        <h2 class="category">四、行业水平评价与信用评价类</h2>
+        <table>
+            <tr>
+                <th>主要事件</th>
+                <th>重点项目</th>
+            </tr>
+            <tr>
+                <td>水土保持水平评价管理</td>
+                <td>方案编制与监测单位水平评价系统</td>
+            </tr>
+            <tr>
+                <td>水土保持信用管理</td>
+                <td>信用管理平台建设</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
