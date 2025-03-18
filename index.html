@@ -13,75 +13,71 @@
             padding: 20px;
         }
         .timeline {
-            max-width: 800px;
+            max-width: 100%;
             margin: 0 auto;
             position: relative;
         }
         .timeline::before {
             content: '';
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
             width: 2px;
             background-color: #4a90e2;
-            transform: translateX(-50%);
         }
         .event {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             position: relative;
+            padding-left: 40px;
         }
         .event:last-child {
             margin-bottom: 0;
         }
         .event-content {
             background-color: white;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 45%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             position: relative;
             z-index: 1;
         }
         .event-date {
             font-weight: bold;
             color: #4a90e2;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 14px;
         }
         .event-title {
             color: #333;
-            margin: 0 0 10px 0;
+            margin: 0 0 8px 0;
+            font-size: 16px;
         }
         .event-description {
             color: #666;
             margin: 0;
-        }
-        .event:nth-child(odd) .event-content {
-            float: left;
-        }
-        .event:nth-child(even) .event-content {
-            float: right;
+            font-size: 14px;
+            line-height: 1.4;
         }
         .event-marker {
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
             background-color: #4a90e2;
             border-radius: 50%;
             position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 15px;
             top: 20px;
             z-index: 2;
         }
         @media (max-width: 768px) {
-            .event-content {
-                width: 90%;
+            .timeline::before {
+                left: 15px;
             }
-            .event:nth-child(odd) .event-content,
-            .event:nth-child(even) .event-content {
-                float: none;
-                margin-left: auto;
-                margin-right: auto;
+            .event {
+                padding-left: 35px;
+            }
+            .event-marker {
+                left: 10px;
             }
         }
     </style>
